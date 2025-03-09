@@ -11,44 +11,11 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          onClick={() => setCount((count) => count + 1)}
-          aria-label="increment"
-        >
-          count is {count}
-        </button>
-        <p>
-          Testing Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <div className="card">
-        <button
-          onClick={() => {
-            fetch("/api/")
-              .then((res) => res.json() as Promise<{ name: string }>)
-              .then((data) => setName(data.name));
-          }}
-          aria-label="get name"
-        >
-          Name from API is: {name}
-        </button>
-        <p>
-          Edit <code>api/index.ts</code> to change the name
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      Der Immobilienmarkt in Österreich ist dynamisch und verändert sich ständig. Immo-Portal.at ist Ihre zuverlässige Quelle für Immobilienpreise, Marktanalysen und aktuelle Trends in der gesamten Alpenrepublik. Egal, ob Sie eine Wohnung in Wien, ein Haus in Salzburg oder eine Gewerbeimmobilie in Graz suchen – bei uns finden Sie die aktuellsten Marktpreise und wertvolle Informationen, um fundierte Entscheidungen zu treffen.
+
+Unser Portal bietet Ihnen detaillierte Preisvergleiche, historische Preisdaten und Prognosen, die Ihnen helfen, den besten Zeitpunkt für Kauf oder Verkauf zu bestimmen. Durch die Analyse von Angebot und Nachfrage, regionalen Entwicklungen und wirtschaftlichen Faktoren sorgen wir dafür, dass Sie den Immobilienmarkt in Österreich immer im Blick haben.
+
+Nutzen Sie unsere benutzerfreundliche Suchfunktion, um Immobilienpreise nach Region, Stadt oder Immobilientyp zu filtern. Ob Käufer, Verkäufer, Investoren oder Makler – Immo-Portal.at ist Ihre Plattform für transparente und verlässliche Immobilienmarktdaten in Österreich. 🏠📈
     </>
   );
 }
